@@ -1,0 +1,36 @@
+.contenedor {
+    background-image: url("antartida.jpg");
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    background-size:cover ;
+}
+
+section {
+    margin: 40px;
+
+}
+
+#imagen1 {
+    position: relative;
+    top: 150px;
+    width: 100px;
+    left: 450px;
+    bottom: 150px;
+}
+
+#imagen2 {
+    position: relative;
+    top: 30px;
+    width: 100px;
+    left: 250px;
+    bottom: 600px;
+}
+
+#imagen3 {
+    position: relative;
+    top: 100px;
+    width: 100px;
+    left: 10px;
+    bottom: 600px;
+}
