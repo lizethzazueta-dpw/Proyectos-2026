@@ -1,0 +1,206 @@
+/* ESTILOS GENERALES */
+body {
+  font-family: cursive;
+  padding: 20px;
+}
+
+hr {
+  margin: 30px 0;
+  border: 0;
+  border-top: 2px solid #ccc;
+}
+
+/* CONTENEDOR GRID BASE */
+.container {
+  display: grid;
+  background-color: rgb(255, 30, 221);
+  padding: 8px;
+  gap: 6px;
+  width: 200px;
+  height: 260px;
+}
+
+/* CELDAS INTERNAS */
+.container div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 1. NEW SCREEN / MARCO BLANCO VACÍO */
+.grid-new-screen { 
+  grid-template-columns: 1fr;
+  background-color: rgb(105, 235, 255);
+  border: 2px solid black;
+}
+.grid-new-screen div {
+  display: none;
+}
+
+/* 2. 1 COLUMN */
+.grid-1col { 
+  grid-template-columns: 1fr; 
+}
+
+/* 3. 2 COLUMNS */
+.grid-2col { 
+  grid-template-columns: 1fr 1fr; 
+}
+
+/* 4. 3 COLUMNS */
+.grid-3col { 
+  grid-template-columns: 1fr 1fr 1fr; 
+}
+
+/* 5. 4 COLUMNS */
+.grid-4col { 
+  grid-template-columns: repeat(4, 1fr); 
+}
+
+/* 6. 2 ROWS */
+.grid-2rows { 
+  grid-template-rows: 1fr 1fr; 
+}
+
+/* 7. 3 ROWS */
+.grid-3rows { 
+  grid-template-rows: repeat(3, 1fr); 
+}
+
+/* 8. 4 ROWS */
+.grid-4rows { 
+  grid-template-rows: repeat(4, 1fr); 
+}
+
+/* 9. 5 ROWS */
+.grid-5rows { 
+  grid-template-rows: repeat(5, 1fr); 
+}
+
+/* 10. 6 ROWS */
+.grid-6rows { 
+  grid-template-rows: repeat(6, 1fr); 
+}
+
+/* 11. LARGE GRID / 2 COLUMNAS Y 3 FILAS */
+.grid-large { 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr); 
+}
+
+/* 12. SMALL GRID / 4 COLUMNAS Y 6 FILAS */
+.grid-small { 
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.grid-small div {
+  font-size: 10px;
+}
+
+/* 13. MOSAIC 1 / 3 CUADROS */
+.mosaic-1 { 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2.5fr 1fr;
+}
+.m1-top { 
+  grid-column-start: 1; 
+  grid-column-end: 3; 
+}
+
+/* 14. MOSAIC 2 / 3 CUADROS (CORRIDO) */
+.mosaic-2 { 
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2.5fr 1fr;
+}
+.m2-top { 
+  grid-column-start: 1; 
+  grid-column-end: 3; 
+}
+
+/* 15. MOSAIC 3 / 5 CUADROS */
+.mosaic-3 { 
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3.5fr 1fr;
+}
+.m3-top { 
+  grid-column-start: 1; 
+  grid-column-end: 5; 
+}
+
+/* 16. MOSAIC 4 / 3 CUADROS (NIVELADO) */
+.mosaic-4 { 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.m4-top { 
+  grid-column-start: 1; 
+  grid-column-end: 3; 
+}
+.m4-side {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.m4-bot { 
+  grid-column-start: 1; 
+  grid-column-end: 3; 
+}
+
+/* 17. MOSAIC 5 / 5 CUADROS */
+.mosaic-5 { 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.m5-mid { 
+  grid-column-start: 1; 
+  grid-column-end: 3; 
+}
+
+/* 18. MOSAIC 6 / 3 CUADROS (BARRA LATERAL) */
+.mosaic-6 { 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.m6-left { 
+  grid-row-start: 1; 
+  grid-row-end: 3; 
+}
+
+/* 19. MOSAIC 7 / 5 CUADROS */
+.mosaic-7 { 
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1.5fr 1fr;
+}
+.m7-big { 
+  grid-column-start: 1; 
+  grid-column-end: 2; 
+  grid-row-start: 1; 
+  grid-row-end: 3; 
+}
+.m7-wide { 
+  grid-column-start: 2; 
+  grid-column-end: 3; 
+  grid-row-start: 3; 
+  grid-row-end: 5; 
+}
+
+/* 20. MOSAIC 8 / 10 CUADROS */
+.mosaic-8 { 
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+.m8-c1 { 
+  grid-column-start: 1; 
+  grid-column-end: 3; 
+  grid-row-start: 1; 
+  grid-row-end: 3; 
+}
+.m8-c7 { 
+  grid-column-start: 2; 
+  grid-column-end: 4; 
+  grid-row-start: 3; 
+  grid-row-end: 5; 
+}
