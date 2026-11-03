@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+
+.fila {
+    display:grid;
+    width:100%;
+    grid-template-columns: repeat(12,1fr);
+    margin-bottom:10px;
+    gap:10px;
+}
+
+[class^="col-"] {
+    border:1px solid black;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.col-1{
+    background-color: rgb(246, 74, 43);
+    grid-column: span 1;
+}
+
+.col-2{
+    background-color:rgb(243, 174, 45);
+    grid-column:span 2;
+}
+.col-3{
+    background-color: rgb(148, 244, 30);
+    grid-column: span 3;
+    
+}
+.col-4{
+    background-color: rgb(53, 248, 141);
+    grid-column: span 4;
+    
+}
+.col-5{
+    background-color: rgb(44, 153, 255);
+    grid-column: span 5;
+    
+}
+.col-6{
+    background-color: rgb(82, 137, 134);
+    grid-column: span 6;
+    
+}
+.col-7{
+    background-color: rgb(38, 35, 217);
+    grid-column: span 7;
+    
+}
+.col-8{
+    background-color: rgb(196, 38, 221);
+    grid-column: span 8;
+    
+}
+.col-9{
+    background-color: rgb(238, 42, 179);
+    grid-column: span 9;
+    
+}
+
+.col-10{
+    background-color: rgb(229, 158, 58);
+    grid-column: span 10;
+    
+}
+.col-11{
+    background-color: rgb(229, 58, 98);
+    grid-column: span 11;
+    
+}
+.col-12{
+    background-color: rgb(224, 8, 8);
+    grid-column: span 12;
+    
+}
