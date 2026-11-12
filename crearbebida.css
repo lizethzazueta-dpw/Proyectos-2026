@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+
+/* ESTILOS GENERALES */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+body{
+    margin: 0;
+    background-color: #E8F0E9;;
+    font-family: "Inter Tight", sans-serif;
+}
+
+/* NAVEGACION */
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  color: #0C593D;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.navbar-item>img{
+    width: 150px;
+}
+
+nav{
+    background-color: #127346;
+    padding: 16px;
+    overflow: auto;
+}
+
+.navbar-item{
+    float: left;
+}
+
+
+/* SECCIÓN RESUMEN DE BEBIDA */
+
+.resumen-bebida {
+    width: 100%;
+    max-width: none;
+    min-height: 650px;
+    margin: 0;
+    padding: 50px 20px 30px;
+    text-align: center;
+    font-family: "Momo Trust Display", sans-serif;
+
+    background-image: url("IMAGENES/CREABEBIDA_FONDO.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.resumen-bebida {
+    padding: 50px 20px 30px;
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+.resumen-bebida h2,
+.resumen-bebida p {
+    text-align: center;
+}
+
+.bebida-imagen img {
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 16px;
+    margin-bottom: 25px;
+}
+
+.ingredientes {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #08452F;
+}
+
+.total {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #08452F;
+}
+
+.button-agregar {
+    background-color: #08452F; 
+    color: #ffffff;
+    border: none;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Inter Tight", sans-serif;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.button-agregar:hover {
+    background-color: #08452F;
+    transform: scale(1.05);
+}
+
+/* 2. SECCIÓN AGREGA A TU PEDIDO */
+.seccion-complementos {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.seccion-complementos h2 {
+    color: #08452F;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.grid-complementos {
+    background-color: #E8F0E9; 
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card-complemento {
+    position: relative;
+    width: 280px;
+    height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-complemento img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+    transition: filter 0.3s ease;
+}
+
+.card-complemento:hover img {
+    filter: brightness(0.65);
+}
+
+.card-complemento:hover img {
+    transform: scale(1.1); 
+    filter: brightness(0.7); 
+    cursor: pointer;     
+}
+
+.card-complemento span {
+    position: absolute;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+/* FOOTER */
+
+.redes-sociales {
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer h4 {
+    margin: 15px 0 8px 0;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin: 5px 0;
+    color: #08452F;
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+footer p {
+    margin: 5px 0 15px 0;
+}
+
+footer {
+    background-color: #E7F0E8;
+    color: #08452F;
+    text-align: center;
+    background-image: url("IMAGENES/FOOTER_FONDO.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #E8F0E9;
+}
+
+/* CLUB NATIVA */
+#club-nativa {
+    padding: 40px;
+}
+
+.contenedor-registro {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 40px;
+}
+
+/* IMAGEN */
+.footer-imagen {
+    flex: 1;
+}
+
+.footer-imagen img {
+    width: 70%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    margin-left: 120px;;
+}
+
+/* TEXTO */
+.footer-texto {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-texto h2 {
+    color: #08452F;
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+.footer-texto p {
+    color: #08452F;
+    line-height: 1.6;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.button{
+    padding: 10px;
+    background-color: #E8F0E9;
+    display: inline-block;
+    margin-left: 0;
+    border-radius: 10px;
+    border: 1px solid #08452F;
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+.button a{
+    color: #08452F;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #08452F;
+    cursor: pointer;
+    transform: scale(1.1); 
+    color: #E8F0E9;
+     transition: transform 0.2s ease;
+}
+
+.button:hover a {
+    color: #E8F0E9;
+}
+
+/* NOMBRE DE NATIVA */
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #08452F;
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+
+/* REDES SOCIALES */
+#redes img {
+    width: 25px;
+    margin: 5px;
+}
+
+.topnav .closebtn,
+nav .icon {
+    display: none;
+}
+
+
+.topnav .closebtn,
+nav .icon {
+    display: none;
+}
+
+
+/* ADAPTACION A CELULARES */
+@media screen and (max-width: 768px) {
+
+    /* NAVEGACION */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 18px;
+    }
+
+    .navbar-item {
+        float: none;
+    }
+
+    .navbar-item img {
+        width: 120px;
+        display: block;
+    }
+
+    /* Botón hamburguesa visible en celular */
+    nav .icon {
+        display: block;
+        color: #ffffff;
+        font-size: 26px;
+        padding: 8px;
+        text-decoration: none;
+    }
+
+    /* Menú lateral de pantalla completa (cerrado por defecto con width: 0) */
+    .topnav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        background-color: #08452F;
+        overflow-x: hidden;
+        transition: 0.4s;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topnav a:not(.closebtn) {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 16px;
+        font-size: 26px;
+        color: #ffffff;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .topnav a.active {
+        background-color: transparent;
+        color: #C5E8D5;
+    }
+
+    /* Botón X para cerrar */
+    .topnav .closebtn {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        font-size: 42px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    /* FOOTER Y CLUB NATIVA */
+    #club-nativa {
+        padding: 20px 0;
+    }
+
+    .contenedor-registro {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-imagen {
+        width: 100%;
+    }
+
+    .footer-imagen img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .footer-texto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-texto h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    .footer-texto p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .footer-texto .button {
+        margin: 10px auto;
+    }
+
+    footer h3 {
+        font-size: 23px;
+    }
+
+    #redes img {
+        width: 27px;
+    }
+
+}

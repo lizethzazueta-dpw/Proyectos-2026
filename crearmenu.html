@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title>NATIVA JUICE LAB</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Jugos personalizados">
+        <meta name="keywords" content="jugo, personalizado, cd obregón, frescura, saludable, wellness">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+         <link rel="stylesheet" href="crearmenu.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <!-- NAVEGACION -->
+        <nav>
+            <a href="index.html" class="navbar-item">
+                <img src="IMAGENES/LOGO NATIVA.png" alt="Logo NATIVA">
+            </a>
+
+            <div class="topnav" id="myTopnav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html" onclick="closeNav()">Inicio</a>
+    <a href="crearmenu.html" class="active" onclick="closeNav()">Crear Bebida</a>
+    <a href="index.html#somos-nativa" onclick="closeNav()">Nosotros</a>
+    <a href="index.html#club-nativa" onclick="closeNav()">Contacto</a>
+</div>
+
+            <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+        <main>
+
+            <!-- HERO PRINCIPAL -->
+            <header>
+                <div>
+                    <h1>CREA TU BEBIDA</h1>
+                    <p>Elige tus ingredientes y crea una combinación única</p>
+                    <div class="button">
+                      <a href="#elige-base">Empezar a crear</a>
+                    </div>
+            </header>
+            <section id="elige-base">
+            <h2>01. Elige tu base</h2>
+            <div class="contenedor-imagenes">
+
+        <!-- AGUA -->
+        <div class="base">
+            <label class="imagen-base">
+                <input type="radio" name="base" value="agua">
+                <img src="IMAGENES/BASE_AGUA.jpeg" alt="Base agua">
+                <h3>Agua</h3>
+            </label>
+        </div>
+
+        <!-- LECHE -->
+        <div class="base">
+            <label class="imagen-base">
+                <input type="radio" name="base" value="leche">
+                <img src="IMAGENES/BASE_LECHE.jpeg" alt="Base leche">
+                <h3>Leche</h3>
+            </label>
+
+            <div class="opciones">
+                <label>
+                    <input type="radio" name="tipo-leche" value="deslactosada">
+                    Deslactosada
+                </label>
+
+                <label>
+                    <input type="radio" name="tipo-leche" value="entera">
+                    Entera
+                </label>
+
+                <label>
+                    <input type="radio" name="tipo-leche" value="avena">
+                    Avena
+                </label>
+
+                <label>
+                    <input type="radio" name="tipo-leche" value="soya">
+                    Soya
+                </label>
+            </div>
+        </div>
+
+        <!-- YOGURT -->
+        <div class="base">
+            <label class="imagen-base">
+                <input type="radio" name="base" value="yogurt">
+                <img src="IMAGENES/BASE_YOGURT.jpeg" alt="Base yogurt">
+                <h3>Yogurt</h3>
+            </label>
+
+            <div class="opciones">
+                <label>
+                    <input type="radio" name="tipo-yogurt" value="natural">
+                    Natural
+                </label>
+
+                <label>
+                    <input type="radio" name="tipo-yogurt" value="griego">
+                    Griego
+                </label>
+
+                <label>
+                    <input type="radio" name="tipo-yogurt" value="sugar-free">
+                    Sugar free
+                </label>
+
+                <label>
+                    <input type="radio" name="tipo-yogurt" value="vegano">
+                    Vegano
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- 2. ELIGE TUS FRUTAS -->
+<section id="elige-frutas">
+
+    <h2>2. Elige tus frutas</h2>
+
+    <div class="contenedor-frutas">
+
+        <div class="fruta">
+            <label class="imagen-opcion">
+                <input type="checkbox" name="frutas" value="fresa">
+                <img src="IMAGENES/FRUTA_FRESA.jpeg" alt="Fresa">
+                <h3>Fresa</h3>
+            </label>
+        </div>
+
+        <div class="fruta">
+            <label class="imagen-opcion">
+                <input type="checkbox" name="frutas" value="mango">
+                <img src="IMAGENES/FRUTA_MANGO.jpeg" alt="Mango">
+                <h3>Mango</h3>
+            </label>
+        </div>
+
+        <div class="fruta">
+            <label class="imagen-opcion">
+                <input type="checkbox" name="frutas" value="pina">
+                <img src="IMAGENES/FRUTA_PIÑA.jpeg" alt="Piña">
+                <h3>Piña</h3>
+            </label>
+        </div>
+
+        <div class="fruta">
+            <label class="imagen-opcion">
+                <input type="checkbox" name="frutas" value="platano">
+                <img src="IMAGENES/FRUTA_PLATANO.jpeg" alt="Plátano">
+                <h3>Plátano</h3>
+            </label>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- 3. AGREGA EXTRAS -->
+<section id="agrega-extras">
+
+    <h2>3. Agrega extras</h2>
+
+    <div class="contenedor-extras">
+
+        <div class="extra">
+            <label class="imagen-opcion">
+                <input type="checkbox" name="extras" value="chia">
+                <img src="IMAGENES/EXTRA_CHIA.jpeg" alt="Chía">
+                <h3>Chía</h3>
+            </label>
+        </div>
+
+        <div class="extra">
+            <label class="imagen-opcion">
+                <input type="checkbox" name="extras" value="avena">
+                <img src="IMAGENES/EXTRA_AVENA.jpeg" alt="Avena">
+                <h3>Avena</h3>
+            </label>
+        </div>
+
+        <div class="extra">
+            <label class="imagen-opcion">
+                <input type="checkbox" name="extras" value="miel">
+                <img src="IMAGENES/EXTRA_MIEL.jpeg" alt="Miel">
+                <h3>Miel</h3>
+            </label>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- 4. ELIGE TU TAMAÑO -->
+<section id="elige-tamano">
+
+    <h2>4. Elige tu tamaño</h2>
+
+    <div class="contenedor-tamanos">
+
+        <!-- CHICO -->
+        <div class="tamano">
+            <label class="imagen-opcion">
+                <input type="radio" name="tamano" value="chico">
+                <img src="IMAGENES/SIZE_CHICO.jpeg" alt="Tamaño chico">
+                <h3>Chico</h3>
+            </label>
+        </div>
+
+        <!-- MEDIANO -->
+        <div class="tamano">
+            <label class="imagen-opcion">
+                <input type="radio" name="tamano" value="mediano">
+                <img src="IMAGENES/SIZE_MEDIANO.jpeg" alt="Tamaño mediano">
+                <h3>Mediano</h3>
+            </label>
+        </div>
+
+        <!-- GRANDE -->
+        <div class="tamano">
+            <label class="imagen-opcion">
+                <input type="radio" name="tamano" value="grande">
+                <img src="IMAGENES/SIZE_GRANDE.jpeg" alt="Tamaño grande">
+                <h3>Grande</h3>
+            </label>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- 5. CANTIDAD Y AÑADIR AL CARRITO -->
+<section id="accion-carrito">
+    <div class="contenedor-compra">
+        <span class="label-cant">Cant.</span>
+
+        <div class="selector-cantidad">
+            <button type="button" onclick="cambiarCantidad(-1)">-</button>
+            <input type="text" id="cantidad-bebida" value="1" readonly>
+            <button type="button" onclick="cambiarCantidad(1)">+</button>
+        </div>
+
+        <button type="button" class="btn-carrito" onclick="agregarAlCarrito()">
+            AÑADIR AL CARRITO
+        </button>
+    </div>
+</section>
+
+<!-- FOOTER -->
+                <footer> 
+
+                  <section id="club-nativa">
+
+                    <div class="contenedor-registro">
+
+                    <div class="footer-imagen">
+                      <img src="IMAGENES/CLUB_NATIVA.png" alt="Club Nativa">
+                     </div>
+
+                    <div class="footer-texto">
+                          <h2>JOIN OUR</h2>
+                          <h2>NATIVAAAS CLUB</h2>
+                         <p>
+                            ¡Regístrate y empieza a disfrutar de los beneficios de ser parte de NATIVA!
+                         </p>
+                    <div class="button regitrarse">
+                    <a href="#">Regístrate</a>
+                  </div>
+                  
+                    </div>
+
+          </section>
+
+    <div>
+        <h4>@NATIVA.JUICE</h4>
+    </div>
+
+    <div>
+        <h3>NATIVA</h3>
+        <p>Natural. Fresco. A tu manera.</p>
+    </div>
+
+    <div id="redes">
+
+        <a href="#" class="redes-sociales">
+            <img src="IMAGENES/facebook_icon.png" alt="Facebook">
+        </a>
+
+        <a href="#" class="redes-sociales">
+            <img src="IMAGENES/instagram_icon.png" alt="Instagram">
+        </a>
+
+        <a href="#" class="redes-sociales">
+            <img src="IMAGENES/tiktok_icon.png" alt="TikTok">
+        </a>
+
+    </div>
+
+</footer>
+
+       <script>
+        function openNav() {
+            document.getElementById("myTopnav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myTopnav").style.width = "0";
+        } /* <-- FALTABA ESTA LLAVE DE CIERRE */
+
+        function cambiarCantidad(cambio) {
+            var input = document.getElementById("cantidad-bebida");
+            var valorActual = parseInt(input.value);
+            var nuevoValor = valorActual + cambio;
+
+            if (nuevoValor >= 1) {
+                input.value = nuevoValor;
+            }
+        }
+
+        function agregarAlCarrito() {
+            var cantidad = document.getElementById("cantidad-bebida").value;
+            alert("¡Se agregaron " + cantidad + " bebida(s) personalizada(s) a tu carrito!");
+        }
+       </script>
+
+    </body>
+
+</html>
