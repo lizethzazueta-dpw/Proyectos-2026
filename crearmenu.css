@@ -1,0 +1,744 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+
+/* ESTILOS GENERALES */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+body{
+    margin: 0;
+    background-color: #0C593D;
+    font-family: "Inter Tight", sans-serif;
+}
+
+/* NAVEGACION */
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  color: #0C593D;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.navbar-item>img{
+    width: 150px;
+}
+
+nav{
+    background-color: #127346;
+    padding: 16px;
+    overflow: auto;
+}
+
+.navbar-item{
+    float: left;
+}
+
+/* HERO PRINCIPAL */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("IMAGENES/SOMOS_NATIVA.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Momo Trust Display", sans-serif;
+    height: 90vh;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;
+}
+
+
+header > img {
+    display: none;
+}
+
+header > div {
+    padding: 20px;
+}
+
+header h1{
+    color: white;
+    font-size: 55px;
+}
+
+header p{
+    margin: 20px;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 25px;
+}
+
+.button{
+    padding: 10px;
+    background-color: #127346;
+    display: inline-block;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.button a{
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #08452F;
+    cursor: pointer;
+}
+
+#elige-base {
+    background-color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+#lo-natural {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.base {
+    flex: 1;
+    min-width: 0;
+}
+
+/* IMAGENES SELECCIONABLES */
+.imagen-base {
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+/* OCULTAR EL CIRCULO DE SELECCION */
+.imagen-base input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+/* ESTILO DE LAS IMAGENES */
+.imagen-base img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+/* EFECTO AL PASAR EL CURSOR */
+.imagen-base:hover img {
+    transform: scale(1.03);
+}
+
+/* IMAGEN CUANDO ESTA SELECCIONADA */
+.imagen-base:has(input:checked) img {
+    border: 3px solid #0C593D;
+}
+
+.imagen-base h3 {
+    color: #0C593D;
+    margin: 15px;
+}
+
+/* OPCIONES DE LECHE Y YOGURT */
+.opciones {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+/* MOSTRAR OPCIONES AL SELECCIONAR LA IMAGEN */
+.base:has(.imagen-base input:checked) .opciones {
+    display: flex;
+}
+
+.opciones label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #08452F;
+}
+
+.opciones input {
+    accent-color: #0C593D;
+}
+
+/* FRUTAS, EXTRAS Y TAMAÑOS */
+#elige-frutas,
+#agrega-extras,
+#elige-tamano {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+/* CONTENEDORES */
+.contenedor-frutas,
+.contenedor-extras,
+.contenedor-tamanos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 35px;
+}
+
+/* TARJETAS */
+.fruta,
+.extra,
+.tamano {
+    flex: 1;
+    min-width: 0;
+}
+
+/* ETIQUETAS SELECCIONABLES */
+.imagen-opcion {
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+/* OCULTAR CIRCULOS */
+.imagen-opcion input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+/* IMAGENES DE FRUTAS, EXTRAS Y TAMAÑOS */
+.imagen-opcion {
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.imagen-opcion input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+.imagen-opcion img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.imagen-opcion:hover img {
+    transform: scale(1.03);
+}
+
+.imagen-opcion:has(input:checked) img {
+    border: 3px solid #0C593D;
+}
+
+.imagen-opcion h3 {
+    color: #0C593D;
+    margin: 15px;
+}
+
+/* CONTENEDOR DE TAMAÑOS */
+.contenedor-tamanos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.tamano {
+    flex: 1;
+    min-width: 0;
+}
+
+/* EFECTO HOVER */
+.imagen-opcion:hover img {
+    transform: scale(1.03);
+}
+
+/* OPCION SELECCIONADA */
+.imagen-opcion:has(input:checked) img {
+    border: 3px solid #0C593D;
+}
+
+/* NOMBRES */
+.imagen-opcion h3 {
+    color: #0C593D;
+    margin: 15px;
+}
+
+/* SECCION CANTIDAD Y AÑADIR AL CARRITO */
+#accion-carrito {
+    background-color: #ffffff;
+    padding: 20px 40px 60px 40px;
+}
+
+.contenedor-compra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.label-cant {
+    font-size: 18px;
+    color: #08452F;
+    font-weight: 500;
+}
+
+/* Caja blanca con borde redondeado (- 1 +) */
+.selector-cantidad {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1.5px solid #08452F;
+    border-radius: 12px;
+    height: 56px;
+    width: 170px;
+    padding: 0 12px;
+    background-color: #ffffff;
+}
+
+.selector-cantidad button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #08452F;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.selector-cantidad input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    font-family: "Inter Tight", sans-serif;
+    color: #08452F;
+    background: transparent;
+}
+
+/* Botón grande AÑADIR AL CARRITO */
+.btn-carrito {
+    flex: 1;
+    height: 56px;
+    background-color: #08452F; /* Si lo prefieres oscuro como la foto, usa #2C2926 */
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-carrito:hover {
+    background-color: #0C593D;
+    transform: scale(1.02);
+}
+
+/* FOOTER */
+
+.redes-sociales {
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer h4 {
+    margin: 15px 0 8px 0;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin: 5px 0;
+    color: #08452F;
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+footer p {
+    margin: 5px 0 15px 0;
+}
+
+footer {
+    background-color: #E7F0E8;
+    color: #08452F;
+    text-align: center;
+    background-image: url("IMAGENES/FOOTER_FONDO.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #E8F0E9;
+}
+
+footer {
+    background-color: #E7F0E8;
+    color: #08452F;
+    text-align: center;
+    background-image: url("IMAGENES/FOOTER_FONDO.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #E8F0E9;
+}
+
+/* CLUB NATIVA */
+#club-nativa {
+    padding: 40px;
+}
+
+.contenedor-registro {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 40px;
+}
+
+/* IMAGEN */
+.footer-imagen {
+    flex: 1;
+}
+
+.footer-imagen img {
+    width: 70%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    margin-left: 120px;;
+}
+
+/* TEXTO */
+.footer-texto {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-texto h2 {
+    color: #08452F;
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+.footer-texto p {
+    color: #08452F;
+    line-height: 1.6;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.button{
+    padding: 10px;
+    background-color: #E8F0E9;
+    display: inline-block;
+    margin-left: 0;
+    border-radius: 10px;
+    border: 1px solid #08452F;
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+.button a{
+    color: #08452F;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #08452F;
+    cursor: pointer;
+    transform: scale(1.1); 
+    color: #E8F0E9;
+     transition: transform 0.2s ease;
+}
+
+.button:hover a {
+    color: #E8F0E9;
+}
+
+/* NOMBRE DE NATIVA */
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #08452F;
+    font-family: "Momo Trust Display", sans-serif;
+}
+
+
+/* REDES SOCIALES */
+#redes img {
+    width: 25px;
+    margin: 5px;
+}
+
+.topnav .closebtn,
+nav .icon {
+    display: none;
+}
+
+
+/* ADAPTACION A CELULARES */
+@media screen and (max-width: 768px) {
+
+    html, body, main {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    #elige-base,
+    #elige-frutas,
+    #agrega-extras,
+    #elige-tamano {
+        background-color: #ffffff;
+        padding: 30px 15px;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    #lo-natural,
+    #elige-frutas,
+    #agrega-extras,
+    #elige-tamano {
+        padding: 30px 15px;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* LOS 4 CARRUSELES ACTIVOS */
+    .contenedor-imagenes,
+    .contenedor-frutas,
+    .contenedor-extras,
+    .contenedor-tamanos {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 15px;
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* TARJETAS DE LOS 4 CARRUSELES */
+    .contenedor-imagenes .base,
+    .contenedor-frutas .fruta,
+    .contenedor-extras .extra,
+    .contenedor-tamanos .tamano {
+        flex: 0 0 75%;
+        min-width: 75%;
+        padding: 5px;
+        scroll-snap-align: start;
+    }
+
+    /* OPCIONES DE LECHE Y YOGURT */
+    .contenedor-imagenes .opciones {
+        flex: none;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 15px;
+        padding-left: 10px;
+    }
+
+    .contenedor-imagenes .base:has(.imagen-base input:checked) .opciones {
+        display: flex;
+    }
+
+    /* NAVEGACION */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 18px;
+    }
+
+    .navbar-item {
+        float: none;
+    }
+
+    .navbar-item img {
+        width: 120px;
+        display: block;
+    }
+
+    nav .icon {
+        display: block;
+        color: #ffffff;
+        font-size: 26px;
+        padding: 8px;
+        text-decoration: none;
+    }
+
+    .topnav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        background-color: #08452F;
+        overflow-x: hidden;
+        transition: 0.4s;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topnav a:not(.closebtn) {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 16px;
+        font-size: 26px;
+        color: #ffffff;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .topnav a.active {
+        background-color: transparent;
+        color: #C5E8D5;
+    }
+
+    .topnav .closebtn {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        font-size: 42px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    /* FOOTER Y CLUB NATIVA */
+    #club-nativa {
+        padding: 20px 0;
+    }
+
+    .contenedor-registro {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-imagen {
+        width: 100%;
+    }
+
+    .footer-imagen img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .footer-texto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-texto h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    .footer-texto p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .footer-texto .button {
+        margin: 10px auto;
+    }
+
+    footer h3 {
+        font-size: 23px;
+    }
+
+    #redes img {
+        width: 27px;
+    }
+
+    #accion-carrito {
+        padding: 20px 15px 50px 15px;
+    }
+
+    .contenedor-compra {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .selector-cantidad {
+        width: 140px;
+        height: 50px;
+    }
+
+    .btn-carrito {
+        width: 100%;
+        flex: none;
+        height: 52px;
+    }
+
+}
