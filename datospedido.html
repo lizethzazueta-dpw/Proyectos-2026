@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>NATIVA JUICE LAB - Datos del Pedido</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Datos de entrega Nativa Juice Lab">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="datospedido.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACION -->
+    <nav>
+        <a href="index.html" class="navbar-item">
+            <img src="IMAGENES/LOGO NATIVA.png" alt="Logo NATIVA">
+        </a>
+
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" onclick="closeNav()">Inicio</a>
+            <a href="index.html#menu" onclick="closeNav()">Menú</a>
+            <a href="crearmenu.html" onclick="closeNav()">Crear bebida</a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <main>
+        <section class="seccion-formulario">
+            <h2>DATOS DEL PEDIDO</h2>
+
+            <form class="form-pedido" action="pago.html">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <label for="instrucciones">Instrucciones de entrega</label>
+                <textarea id="instrucciones" name="instrucciones" rows="4"></textarea>
+
+                <p class="label-entrega">Forma de entrega</p>
+                <div class="opciones-entrega">
+                    <label class="radio-opcion">
+                        <input type="radio" name="entrega" value="tienda" checked>
+                        Recoger en tienda
+                    </label>
+
+                    <label class="radio-opcion">
+                        <input type="radio" name="entrega" value="envio">
+                        Envío
+                    </label>
+                </div>
+
+                <div class="contenedor-boton">
+                    <button type="submit" class="btn-confirmar">Confirmar pedido</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+     <!-- FOOTER -->
+                <footer> 
+
+                  <section id="club-nativa">
+
+                    <div class="contenedor-registro">
+
+                    <div class="footer-imagen">
+                      <img src="IMAGENES/CLUB_NATIVA.png" alt="Club Nativa">
+                     </div>
+
+                    <div class="footer-texto">
+                          <h2>JOIN OUR</h2>
+                          <h2>NATIVAAAS CLUB</h2>
+                         <p>
+                            ¡Regístrate y empieza a disfrutar de los beneficios de ser parte de NATIVA!
+                         </p>
+                    <div class="button regitrarse">
+                    <a href="#">Regístrate</a>
+                  </div>
+                  
+                    </div>
+
+          </section>
+
+    <div>
+        <h4>@NATIVA.JUICE</h4>
+    </div>
+
+    <div>
+        <h3>NATIVA</h3>
+        <p>Natural. Fresco. A tu manera.</p>
+    </div>
+
+    <div id="redes">
+
+        <a href="#" class="redes-sociales">
+            <img src="IMAGENES/facebook_icon.png" alt="Facebook">
+        </a>
+
+        <a href="#" class="redes-sociales">
+            <img src="IMAGENES/instagram_icon.png" alt="Instagram">
+        </a>
+
+        <a href="#" class="redes-sociales">
+            <img src="IMAGENES/tiktok_icon.png" alt="TikTok">
+        </a>
+
+    </div>
+
+</footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("myTopnav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myTopnav").style.width = "0";
+        }
+    </script>
+
+</body>
+</html>

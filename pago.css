@@ -1,0 +1,115 @@
+/* ESTILOS DE MÉTODO DE PAGO */
+body {
+    background-color: #E8F0E9;
+}
+
+main {
+    background-image: url("IMAGENES/CREABEBIDA_FONDO.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 20px 70px;
+}
+
+.seccion-pago {
+    background-color: rgba(255, 255, 255, 0.94);
+    padding: 40px 30px;
+    max-width: 520px;
+    margin: 0 auto;
+    border-radius: 20px;
+    color: #08452F;
+}
+
+.seccion-pago h2 {
+    text-align: center;
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: 28px;
+    color: #08452F;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* AQUIII BOTON Apple Pay */
+.btn-apple-pay {
+    width: 100%;
+    padding: 13px;
+    background-color: #1c1c1e;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.btn-apple-pay:hover {
+    opacity: 0.9;
+    transform: scale(1.01);
+}
+
+.form-pago {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-pago label {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #08452F;
+    margin-bottom: 6px;
+    margin-top: 14px;
+}
+
+.form-pago input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #08452F;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 15px;
+    color: #08452F;
+    outline: none;
+    margin-bottom: 8px;
+}
+
+.form-pago input:focus {
+    background-color: #E8F0E9;
+    border-color: #127346;
+}
+
+/* Fila doble para MM/YY y CVC */
+.fila-doble {
+    display: flex;
+    gap: 10px;
+}
+
+.fila-doble input {
+    flex: 1;
+}
+
+/* Botón Pagar $85 */
+.btn-pagar {
+    width: 100%;
+    margin-top: 22px;
+    padding: 15px;
+    background-color: #08452F;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-pagar:hover {
+    background-color: #127346;
+    transform: scale(1.02);
+}

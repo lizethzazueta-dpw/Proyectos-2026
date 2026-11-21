@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>NATIVA JUICE LAB - Método de Pago</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Método de pago Nativa Juice Lab">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="pago.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACION -->
+    <nav>
+        <a href="index.html" class="navbar-item">
+            <img src="IMAGENES/LOGO NATIVA.png" alt="Logo NATIVA">
+        </a>
+
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" onclick="closeNav()">Inicio</a>
+            <a href="index.html#menu" onclick="closeNav()">Menú</a>
+            <a href="crearmenu.html" onclick="closeNav()">Crear bebida</a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <main>
+        <section class="seccion-pago">
+            <h2>MÉTODO DE PAGO</h2>
+
+            <button type="button" class="btn-apple-pay" onclick="procesarPago()">
+                <i class="fa fa-apple"></i> Pay
+            </button>
+
+            <form class="form-pago" onsubmit="procesarPago(); return false;">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+
+                <label for="tarjeta">Detalles de la tarjeta</label>
+                <input type="text" id="tarjeta" name="tarjeta" placeholder="1234 1234 1234 1234" maxlength="19" required>
+
+                <div class="fila-doble">
+                    <input type="text" id="expiracion" name="expiracion" placeholder="MM/YY" maxlength="5" required>
+                    <input type="text" id="cvc" name="cvc" placeholder="CVC" maxlength="4" required>
+                </div>
+
+                <label for="titular">Nombre titular de la tarjeta</label>
+                <input type="text" id="titular" name="titular" required>
+
+                <label for="pais">País de origen</label>
+                <input type="text" id="pais" name="pais" value="México" required>
+                <input type="text" id="cp" name="cp" placeholder="Código postal" maxlength="5" required>
+
+                <button type="submit" class="btn-pagar">Pagar $85.00 MXN</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer> 
+        <section id="club-nativa">
+            <div class="contenedor-registro">
+                <div class="footer-imagen">
+                    <img src="IMAGENES/CLUB_NATIVA.png" alt="Club Nativa">
+                </div>
+
+                <div class="footer-texto">
+                    <h2>JOIN OUR</h2>
+                    <h2>NATIVAAAS CLUB</h2>
+                    <p>
+                        ¡Regístrate y empieza a disfrutar de los beneficios de ser parte de NATIVA!
+                    </p>
+                    <div class="button regitrarse">
+                        <a href="#">Regístrate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div>
+            <h4>@NATIVA.JUICE</h4>
+        </div>
+
+        <div>
+            <h3>NATIVA</h3>
+            <p>Natural. Fresco. A tu manera.</p>
+        </div>
+
+        <div id="redes">
+            <a href="#" class="redes-sociales">
+                <img src="IMAGENES/facebook_icon.png" alt="Facebook">
+            </a>
+
+            <a href="#" class="redes-sociales">
+                <img src="IMAGENES/instagram_icon.png" alt="Instagram">
+            </a>
+
+            <a href="#" class="redes-sociales">
+                <img src="IMAGENES/tiktok_icon.png" alt="TikTok">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("myTopnav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myTopnav").style.width = "0";
+        }
+
+        function procesarPago() {
+            alert("¡Pago realizado con éxito! Tu pedido de NATIVA está en preparación.");
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>
