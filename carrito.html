@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>NATIVA JUICE LAB - Carrito</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Carrito de compras Nativa Juice Lab">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="crearbebida.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACION -->
+    <nav>
+        <a href="index.html" class="navbar-item">
+            <img src="IMAGENES/LOGO NATIVA.png" alt="Logo NATIVA">
+        </a>
+
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" onclick="closeNav()">Inicio</a>
+            <a href="index.html#menu" onclick="closeNav()">Menú</a>
+            <a href="crearmenu.html" onclick="closeNav()">Crear bebida</a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <main>
+        <!-- SECCIÓN MI PEDIDO -->
+        <section class="resumen-bebida">
+            <h2>MI PEDIDO</h2>
+            
+            <div class="bebida-imagen">
+                <img src="IMAGENES/JUGO_CREABEBIDA.jpeg" alt="Smoothie personalizado">
+            </div>
+
+            <div class="bebida-detalles">
+                <p class="ingredientes">
+                    <strong>Smoothie personalizado</strong><br>
+                    Mango + Fresa + Chía<br>
+                    Grande
+                </p>
+                <p class="total">
+                    $85<br>
+                    <span style="font-size: 18px; font-weight: normal;">Subtotal: $85</span>
+                </p>
+                <button type="button" class="button-agregar" onclick="window.location.href='datospedido.html'">
+                    Continuar pedido
+                </button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN AGREGA A TU PEDIDO -->
+        <section class="seccion-complementos">
+            <h2>Agrega a tu pedido</h2>
+
+            <div class="grid-complementos">
+                <div class="card-complemento">
+                    <img src="IMAGENES/AGREGA_SANDWICH.jpeg" alt="Sandwich">
+                    <span>Sandwich</span>
+                </div>
+                <div class="card-complemento">
+                    <img src="IMAGENES/AGREGA_TOAST.jpeg" alt="Panini">
+                    <span>Panini</span>
+                </div>
+                <div class="card-complemento">
+                    <img src="IMAGENES/AGREGA_WRAP.jpeg" alt="Wrap">
+                    <span>Wrap</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+                <footer> 
+
+                  <section id="club-nativa">
+
+                    <div class="contenedor-registro">
+
+                    <div class="footer-imagen">
+                      <img src="IMAGENES/CLUB_NATIVA.png" alt="Club Nativa">
+                     </div>
+
+                    <div class="footer-texto">
+                          <h2>JOIN OUR</h2>
+                          <h2>NATIVAAAS CLUB</h2>
+                         <p>
+                            ¡Regístrate y empieza a disfrutar de los beneficios de ser parte de NATIVA!
+                         </p>
+                    <div class="button regitrarse">
+                    <a href="#">Regístrate</a>
+                  </div>
+                  
+                    </div>
+
+          </section>
+
+    <div>
+        <h4>@NATIVA.JUICE</h4>
+    </div>
+
+    <div>
+        <h3>NATIVA</h3>
+        <p>Natural. Fresco. A tu manera.</p>
+    </div>
+
+    <div id="redes">
+
+        <a href="#" class="redes-sociales">
+            <img src="IMAGENES/facebook_icon.png" alt="Facebook">
+        </a>
+
+        <a href="#" class="redes-sociales">
+            <img src="IMAGENES/instagram_icon.png" alt="Instagram">
+        </a>
+
+        <a href="#" class="redes-sociales">
+            <img src="IMAGENES/tiktok_icon.png" alt="TikTok">
+        </a>
+
+    </div>
+
+</footer>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myTopnav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myTopnav").style.width = "0";
+        }
+    </script>
+
+</body>
+</html>
